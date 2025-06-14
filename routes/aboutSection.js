@@ -1,7 +1,7 @@
 // routes/about.js
 const express = require('express');
 const router = express.Router();
-const AboutSection = require('../models/AboutSection');
+const AboutSection = require('../models/aboutSection');
 
 // GET About Section
 router.get('/', async (req, res) => {
