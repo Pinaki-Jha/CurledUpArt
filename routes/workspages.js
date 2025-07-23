@@ -13,8 +13,6 @@ router.get('/mainpage', async (req, res) => {
   }
 });
 
-module.exports = router;
-
 
 //get one worksection
 router.get('/:formattedHeading', async (req, res) => {
