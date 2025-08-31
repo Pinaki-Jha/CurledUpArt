@@ -6,7 +6,7 @@ const WorksPageSection = require('../models/worksPage');
 // Get all WorksPageSections
 router.get('/mainpage', async (req, res) => {
   try {
-    const data = await WorksPageSection.find() .select('heading mainImage description').sort({ createdAt: 1 }); // optional sort
+    const data = await WorksPageSection.find() .select('heading mainImage description order').sort({ createdAt: 1 }); // optional sort
     res.json(data);
   } catch (err) {
     res.status(500).json({ error: 'Failed to fetch works sections' });

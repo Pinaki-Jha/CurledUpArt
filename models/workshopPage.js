@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const workshopSectionSchema = new mongoose.Schema({
   heading: String,
   description: String,
+  order: {type:Number, default:10000},
   links: [String], // Array of Google Drive links
 });
 

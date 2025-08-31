@@ -12,6 +12,7 @@ const WorksPageSectionSchema = new mongoose.Schema({
   heading: { type: String, required: true },
   description: { type: String, default: '' },
   description2: { type: String, default: '' },
+  order:{type:Number, default:10000},
   mainImage: {
     url: String,
     public_id: String
